@@ -1,0 +1,13 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.content %></p>
+
+<h3>Comments</h3>
+<% @post.comments.each do |comment| %>
+  <p><%= comment.content %> - <%= comment.user.email %></p>
+<% end %>
+
+<h3>Leave a comment:</h3>
+<%= form_with model: [ @post, Comment.new ] do |form| %>
+  <%= form.text_area :content %>
+  <%= form.submit "Post Comment" %>
+<% end %>

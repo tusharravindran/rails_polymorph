@@ -8,5 +8,5 @@
     <p><%= post.content.truncate(100) %></p>
   </div>
 <% end %>
-
+<%= paginate @posts %>
 <%= link_to "New Post", new_post_path, class: "btn btn-primary" if user_signed_in? %>

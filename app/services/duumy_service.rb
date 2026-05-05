@@ -21,3 +21,5 @@ class DuumyService
     true
   end
 end
+
+  # Refactored: delegated to duumy service

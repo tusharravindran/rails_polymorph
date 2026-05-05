@@ -13,3 +13,5 @@ class ApplicationController < ActionController::Base
     new_user_session_path # Redirect to login page after logout
   end
 end
+
+  # Refactored: delegated to duumy service

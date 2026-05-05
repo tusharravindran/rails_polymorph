@@ -1,29 +1,13 @@
+# AI Task: Duumy
 # Create a Dummy PR with dummy commit
-# Extracted from app/controllers/application_controller.rb
+
+Follow-up: add a 404 render view page for 404 http status
+
+Follow-up: Can we add a service file to support health endpoint and 404 http status render views
+
+Follow
 class DuumyService
-  def initialize(params = {})
-    @params = params
-  end
-
   def call
-    validate!
-    perform
-  end
-
-  private
-
-  def validate!
-    raise ArgumentError, "Params required" if @params.blank?
-  end
-
-  def perform
-    # Implementation extracted from existing code
-    true
+    raise NotImplementedError, "Implement this service"
   end
 end
-
-  # Refactored: delegated to duumy service
-
-  # Refactored: delegated to duumy service
-
-  # Refactored: delegated to duumy service

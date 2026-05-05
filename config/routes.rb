@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  match "*path", to: "errors#not_found", via: :all
+  get "/health", to: "health#show"
   devise_for :users do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
